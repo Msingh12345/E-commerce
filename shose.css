@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(56, 46, 255, 0.099);
+    /* background-color: white; */
+}
+
+header {
+    background-color: rgb(32, 74, 74);
+    width: 100%;
+    /* height: 8vh; */
+    height: auto;
+    position: sticky;
+    z-index: 999999999999999;
+    top: 0;
+}
+
+header nav {
+    display: flex;
+    width: 97%;
+    /* border: 1px solid wheat; */
+    margin: auto;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+header nav .logo a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav .logo span {
+    font-size: 15px;
+    color: white;
+}
+
+header .searchbar {
+    position: relative;
+    width: 40%;
+    /* border: 1px solid white; */
+    height: 4vh;
+    margin-left: 120px;
+    background-color: aliceblue;
+}
+
+header .searchbar input{
+    outline: none;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    /* color: white; */
+    font-size: 12px;
+}
+
+header .searchbar i {
+    position: absolute;
+    align-items: center;
+    margin-top: 1vh;
+    margin-right: 10px;
+    right: 0;
+}
+
+header .searchbar i:hover {
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style-type: none;
+    color: white;
+    margin-left: 45px;
+    font-weight: 300;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li i {
+    margin-right: 5px;
+}
+
+header .brand_nav{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(45, 40, 40); 
+    color: white;
+}
+header .brand_nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    transition:.3s linear ;
+    padding: 0px 25px;
+}
+header .brand_nav ul li{
+    position: relative;
+    transition: .2s linear;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .brand_nav ul li a{
+    text-decoration: none;
+    color: rgba(192, 205, 215, 0.744);
+    font-size: 16px;
+    transition: .3s linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+header .brand_nav ul li a:hover{
+    color: aliceblue;
+}
+header .brand_nav ul li i{
+    margin-left: 6px;
+}
+header .brand_nav ul li img{
+    width: 60px;
+}
+header .brand_nav ul li:nth-child(2){
+   background: orangered;
+   width: 130px;
+}
+header .brand_nav ul li:nth-child(4){
+    width: 130px;
+}
+header .brand_nav ul li:nth-child(5){
+    width: 130px;
+}
+header .brand_nav ul li:nth-child(4):hover{
+    background: orangered;
+}
+header .brand_nav ul li:nth-child(5):hover{
+    background: orangered;
+}
+header .brand_nav ul li:nth-child(1) .select_bx{
+    position: absolute;
+    top: 100%;
+    width: 90px;
+    height: 0;
+    background: orangered;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999999999;
+    box-shadow: 0 0 20px rgb(0, 0, 0,0.5);
+    overflow: hidden;
+    transition: .3s linear;
+    opacity: 0;
+}
+header .brand_nav ul li:nth-child(1) .select_bx h5{
+    padding: 5px 0px;
+}
+header .brand_nav ul li:nth-child(1) .select_bx_active{
+    height: 100px ;
+    opacity: 1;
+}
+header .brand_nav .li_bx{
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 60, 6);
+    padding: 8px 0;
+}
+header .brand_nav .li_bx{
+   color: white;
+   font-size: 15px;
+   transition: .3s linear;
+   cursor: pointer;
+}
+header .brand_nav .li_bx li:hover{
+    color: black;
+}
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 34px auto 0px auto;
+    background-color: white;
+    /* border: 1px solid gold; */
+}
+section aside,.shose_bx{
+    width: 82%;
+    height: auto;
+}
+section aside{
+    width: 18%;
+}
+section .shose_bx{
+    padding: 8px 38px;
+}
+section .shose_bx nav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid  rgb(0, 0, 0,0.1);
+}
+section .shose_bx nav h6 i{
+    margin: 0px 3px;
+}
+section .shose_bx nav h6 span{
+    columns: gray;
+}
+section .shose_bx section{
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    margin-top: 15px;
+}
+section .shose_bx section .title_sortby{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section .shose_bx section .title_sortby h4{
+    font-weight: 600;
+}
+section .shose_bx section .title_sortby .select_sortby{
+    position: relative;
+}
+section .shose_bx section .title_sortby .select_sortby button{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 6px 10px;
+    width: 150px;
+    border: 1px solid rgb(0, 0, 0,0.1);
+    border-radius: 2px;
+    background: none;
+    cursor: pointer;
+}
+section .shose_bx section .title_sortby .select_sortby button i{
+    font-size: 10px;
+    color: gray;
+}
+section .shose_bx section .title_sortby .select_sortby .sortby_opt{
+    position: absolute;
+    width:150px;
+    height:0;
+    padding: 5px 10px 10px 10px;
+    background-color: white;
+    text-align: center;
+    overflow: hidden;
+    transition: .2s linear;
+    opacity: 0;
+}
+section .shose_bx section .title_sortby .select_sortby .sortby_opt li{
+    list-style-type: none;
+    background:rgb(0, 0, 0,0.1);
+    padding: 5px 0px;
+    margin-top: 5px;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s linear;
+}
+section .shose_bx section .title_sortby .select_sortby .sortby_opt li:hover{
+    background: black;
+    color: white;
+}
+section .shose_bx section .title_sortby .select_sortby .sortby_opt_active{
+    height: 150px;
+    opacity: 1;
+    z-index: 999999999999;
+}
+
+section .shose_bx .main_shoes_bx{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+section .shose_bx .main_shoes_bx .card{
+    position: relative;
+    width: 180px;
+    height: 260px;
+    /* border: 1px solid black; */
+    margin: 5px 5px 25px 0px; 
+    text-decoration: none;
+    transition: .1s linear;
+    padding: 10px 10px;
+}
+section .shose_bx .main_shoes_bx .card:hover{
+    box-shadow: 0px 0px 20px rgb(0, 0, 0,0.2);
+}
+section .shose_bx .main_shoes_bx .card img{
+    height: 150px;
+    width: 100%;
+}
+section .shose_bx .main_shoes_bx .card .card_title{
+    font-size: 11px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+section .shose_bx .main_shoes_bx .card p{
+    font-size: 11px;
+    font-weight: 500;
+    color: gray;
+}
+section .shose_bx .main_shoes_bx .card .price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+}
+section .shose_bx .main_shoes_bx .card .price h5{
+    font-size: 11px;
+    color: black;
+}
+section .shose_bx .main_shoes_bx .card .price h5:nth-child(2){
+    color: gray;
+    font-size: 10px;
+}
+section .shose_bx .main_shoes_bx .card .colortag{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-top: 8px;
+    border-top: 1px solid rgb(0, 0, 0,0.1);
+}
+section .shose_bx .main_shoes_bx .card .colortag h6{
+    font-size: 10px;
+    margin-top: 3px;
+    color: gray;
+}
+section .shose_bx .main_shoes_bx .card .colortag h6:nth-child(2){
+    color: rgb(154, 23, 134);
+}
+
+section .shose_bx .pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0px 30px 0px;
+}
+section .shose_bx .pagination a{
+    width: 20%;
+    padding: 8px 0px ;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0,0.1);
+    font-size: 18px;
+    text-align: center;
+    transition: .3s linear;
+}
+section .shose_bx .pagination a:hover{
+    color: white;
+    background: crimson;
+}
+section .shose_bx .pagination h6{
+    width: 40%;
+    font-size: large;
+    text-align: center;
+    border-top: 1px solid rgb(0, 0, 0,0.1);
+    border-bottom:1px solid rgb(0, 0, 0,0.1);
+    padding: 8px 0px;
+    color: crimson;
+}
+
+/* filter css code */
+
+section aside{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 40px;
+}
+section aside .filter_bx{
+    width:  160px;
+    height: auto;
+    background: rgb(0, 0, 0,0.1);
+    padding: 10px;
+}
+
+section aside .filter_bx .filter{
+    font-size: 12px;
+}
+section aside .filter_bx .total_shoes{
+    font-size:11px ;
+    margin-top: 3px;
+}
+
+section aside .filter_bx .shoes_check{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid rgb(0, 0, 0,0.1);
+    margin-top: 10px;
+}
+section aside .filter_bx .shoes_check .shoes_checked{
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 5px 8px;
+   margin: 10px 0px;
+   background-color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+}
+section aside .filter_bx .shoes_check_of{
+    background: none;
+    color: black;
+}
+section aside .filter_bx .shoes_check li{
+    width: 90%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 12px;
+    font-weight: 500px;  
+}
+section aside .filter_bx .shoes_check li i{
+    font-size: 14px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+/* //javascipt class */
+
+section aside .filter_bx .shoes_check li .i_active{
+    color: blue;
+}
+
+section aside .filter_bx .shoes_check .input_p{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+section aside .filter_bx .shoes_check .input_p::before{
+    content: '';
+    position: absolute;
+    width: 88%;
+    height: 3px;
+    background: rgb(0, 0, 0,0.3);
+    top: 10px;
+    left: 0;
+}
+section aside .filter_bx .shoes_check .input_p .input1{
+    position: relative;
+    width: 44%;
+
+}
+section aside .filter_bx .shoes_check .input_p .input1 input{
+    z-index: 99999999999;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+}
+section aside .filter_bx .shoes_check .input_p .input1 i{
+position: absolute;
+top: 3px;
+left: 0%;
+transition: 1s linear;
+}
+section aside .filter_bx .shoes_check .input_p .input1:nth-child(2) i{
+    left: 100%;
+}
+
+section aside .filter_bx .shoes_check .input_price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+section aside .filter_bx .shoes_check .input_price h6{
+    border: 1px solid ,rgb(0, 0, 0,0.3);
+    padding: 3px 12px;
+    color: rgb(0, 0, 0,0.8);
+}
+section aside .filter_bx .shoes_check .size_bx{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section aside .filter_bx .shoes_check .size_bx h6{
+    border: 2px solid rgb(0, 0, 0,0.8);
+    padding: 3px 7px;
+    margin: 5px;
+    cursor: pointer;
+}

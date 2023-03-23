@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(56, 46, 255, 0.099);
+    /* background-color: white; */
+}
+
+header {
+    background-color: rgb(32, 74, 74);
+    width: 100%;
+    height: 8vh;
+    position: sticky;
+    z-index: 999999999999999;
+    top: 0;
+}
+
+header nav {
+    display: flex;
+    width: 97%;
+    /* border: 1px solid wheat; */
+    margin: auto;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+header nav .logo a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav .logo span {
+    font-size: 15px;
+    color: white;
+}
+
+header .searchbar {
+    position: relative;
+    width: 40%;
+    /* border: 1px solid white; */
+    height: 4vh;
+    margin-left: 120px;
+    background-color: aliceblue;
+}
+
+header .searchbar input{
+    outline: none;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    /* color: white; */
+    font-size: 12px;
+}
+
+header .searchbar i {
+    position: absolute;
+    align-items: center;
+    margin-top: 1vh;
+    margin-right: 10px;
+    right: 0;
+}
+
+header .searchbar i:hover {
+    cursor: pointer;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style-type: none;
+    color: white;
+    margin-left: 45px;
+    font-weight: 300;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li i {
+    margin-right: 5px;
+}
+
+.brand_nav {
+    width: 100%;
+    /* border: 1px solid red; */
+    height: 5vh;
+    background-color: rgb(42, 42, 42);
+}
+
+.brand_nav ul {
+    width: 96%;
+    display: flex;
+    height: 100%;
+    padding-top: 1vh;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.brand_nav ul li {
+    list-style-type: none;
+    color: white;
+    font-weight: 400;
+}
+
+.brand_nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.brand_nav ul li i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+
+.bar {
+    position: absolute;
+    display: flex;
+    width: 340px;
+    height: 100vh;
+    /* border: 1px solid purple; */
+    transition: .4s linear;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    z-index: 999999;
+    overflow: auto;
+    scroll-behavior: smooth;
+    /* position: sticky; */
+}
+/* .bar::-webkit-scrollbar{
+    display: none;
+} */
+
+.bar i {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    right: 0px;
+}
+
+.bar .menu_item {
+    margin-top: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.505);
+}
+
+.bar .menu_item .menu_item_name {
+    width: 100%;
+    height: auto;
+    padding: 7px 0 7px 30px;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.bar .menu_item .menu_item_name a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+}
+
+.bar .menu_item .menu_item_name:hover {
+    background-color: rgba(58, 72, 85, 0.1);
+}
+.bar .menu_item .menu_item_type{
+    /* border: 1px solid purple; */
+    height: auto;
+    padding: 6px 0 6px 30px;
+}
+.bar .menu_item .menu_item_type a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    /* border: 1px solid red; */
+}
+.bar .menu_item .menu_item_type:hover{
+    background-color: rgba(58, 72, 85, 0.1);
+}
+
+
+
+
+
+
+
+
+
+section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    padding: 50px 50px 0 50px;
+}
+
+/* .div1{
+    width: 100%;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+}
+.div1 .four{
+    width: 330px;
+    height: 100%;
+    background:rgb(255, 255, 255);
+    border: 1px solid orangered;
+}
+.div1 div{
+    width: 330px;
+    height: 100%;
+    background:rgb(255, 255, 255);
+    border: 1px solid orangered;
+}
+.div1 .four div{
+    width: 300px;
+    height: 35vh;
+    align-items: center;
+    justify-content: center;
+}
+.div1 .four div img{
+    width: 100%;
+    height: 100%;
+} */
+
+
+
+
+
+
+
+
+
+
+.div2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid green; */
+    /* background-color: white; */
+    /* background-color: rgba(220, 220, 220, 0.525); */
+    /* margin: 10px; */
+}
+
+.div2 .h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div2 .h2 h1 {
+    padding: 5px;
+    font-weight: 900;
+    font-size: 23px;
+}
+
+.div2 .h2 .bi {
+    color: #1c45fc;
+    cursor: pointer;
+    font-size: 30px;
+    transition: .3s linear;
+}
+
+.div2 .h2 .bi:hover {
+    color: rgb(246, 15, 15);
+}
+
+.div2 .h2 .btn_s #pop_art_left,
+#pop_art_left1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 9999;
+    /* display: none; */
+}
+
+.div2 .h2 .btn_s #pop_art_right,
+#pop_art_right1 {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 9999;
+    /* display: none; */
+}
+
+.div2 .item {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    display: flex;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+.div2 .item::-webkit-scrollbar {
+    display: none;
+}
+
+.div2 .item li {
+    min-width: 300px;
+    height: 45vh;
+    position: relative;
+    list-style-type: none;
+    /* border: 1px solid green; */
+    background-color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.div2 .item li .card {
+    display: grid;
+    grid-template-rows: 80% auto auto;
+    width: 250px;
+    height: 100%;
+    /* border: 2px solid red; */
+    padding: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center
+        /* background-color: rgba(220, 220, 220, 0.525); */
+}
+
+.div2 .item li .card img {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center
+}
+
+.div2 .item li .card .card_title {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.div2 .item li .card div {
+    display: flex;
+    font-size: 17px;
+    font-weight: 200;
+    color: rgb(101, 101, 101);
+}
+
+.div2 .item li .card .price .mrptag {
+    color: white;
+    background-color: rgb(255, 0, 72);
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    margin-right: 20px;
+    padding: 0px 8px 0px 8px;
+}
